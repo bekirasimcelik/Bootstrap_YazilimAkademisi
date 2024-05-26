@@ -54,6 +54,29 @@ body {
     margin-top: 100px;
 }
 
+/** Title class'ına ait ekstra */
+.title::before {
+    content: "";
+    background-color: #7b1798;
+    width: 200px;
+    height: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(63px); /** transformY ile yapıyı y ekseninde öteledik*/
+}
+
+.title::after {
+    content: "";
+    background-color: #7b1798;
+    width: 50px;
+    height: 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateY(8px);
+}
+
 .play-btn {
     width: 45px;
     margin: 20px;
@@ -65,9 +88,43 @@ body {
 }
 
 .bottom-img {
-    width: ;
+    width: 100%;
 }
 
 .wave {
     width: 100%;
+}
+
+/** Service Area */
+#services {
+    padding: 80px 0;
+}
+
+.service-img {
+    width: 100px;
+}
+
+.services {
+    padding: 20px;
+}
+
+.services h4 {
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.btn-wrapper {
+    position: relative;
+}
+
+#services .btn-primary {
+    box-shadow: none !important;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #b95dc7, #41095d);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
